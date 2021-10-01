@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P> are you sure you wanna delete "{{item.name}} "?</P>
+    <form method="POST" action="">
+        {% csrf_token %} 
+        <input type="submit" name="confirm">
+    </form>
+    <a href=" {% url 'home' %} "  > cancel
+
+    </a>
+</body>
+</html>
